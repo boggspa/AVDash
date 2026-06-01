@@ -1,0 +1,45 @@
+
+# Xcode
+.DS_Store
+build/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.derivedData*/
+.derivedData/
+.derivedData-app/
+.derivedData-app-check/
+.derivedData-audio-agent/
+.derivedData-audio-agent-check/
+.derivedData-avcmeterkit/
+.derivedData-cascade/
+.derivedData-driver/
+.derivedData-firewirenetbridge/
+.derivedData-investigate/
+.derivedData-test/
+.avcmeterkit-build/
+.firewirenetbridge-build/
+.module-cache/
+.spm-cache/
+.swift-module-cache/
+.swift-module-cache-mac/
+
+# User Settings
+xcuserdata/
+*.xcuserdatad
+*.xccheckout
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.xcuserstate
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Local logs
+build.log
+build2.log
+build_errors.txt

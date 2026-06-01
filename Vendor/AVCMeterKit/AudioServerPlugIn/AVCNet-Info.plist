@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>AudioServerPlugIn</key>
+    <true/>
+    <key>CFBundleIdentifier</key>
+    <string>com.chrisizatt.AVCNet</string>
+    <key>CFBundleVersion</key>
+    <string>1.0</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+
+    <key>CFPlugInFactories</key>
+    <dict>
+        <key>A572D3C1-EE64-4FA9-AB62-13C9882ABF42</key>
+        <string>AVCNet_Create</string>
+    </dict>
+
+    <key>CFPlugInTypes</key>
+    <dict>
+        <key>C8867CF0-8A3D-11D3-BA17-000393673B0F</key>
+        <array>
+            <string>A572D3C1-EE64-4FA9-AB62-13C9882ABF42</string>
+        </array>
+    </dict>
+
+    <key>NSExtension</key>
+    <dict>
+        <key>NSExtensionPointIdentifier</key>
+        <string>com.apple.audio.AudioServerPlugIn</string>
+    </dict>
+</dict>
+</plist>

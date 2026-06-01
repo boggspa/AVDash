@@ -1,0 +1,20 @@
+// Shared build settings for PodcastPreview project
+// Applied to all targets via project-level configuration
+
+// Swift version
+SWIFT_VERSION = 5.0
+
+// Deployment targets
+MACOSX_DEPLOYMENT_TARGET = 11.5
+IPHONEOS_DEPLOYMENT_TARGET = 17.0
+
+// Code signing
+DEVELOPMENT_TEAM = 8CZML8FK2D
+CODE_SIGN_STYLE = Automatic
+
+// Swift concurrency
+SWIFT_APPROACHABLE_CONCURRENCY = YES
+SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES
+
+// Versioning
+MARKETING_VERSION = 1.0

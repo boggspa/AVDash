@@ -1,0 +1,2273 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F72AD059CD90A986CF36287 /* PodcastPreviewShared in Frameworks */ = {isa = PBXBuildFile; productRef = BB2222223333444455556666 /* PodcastPreviewShared */; };
+		A43A36F52F6CB9FE0086383E /* com.chrisizatt.PodcastPreview.PowerMetricsService in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4A267F92F678809000BF5D1 /* com.chrisizatt.PodcastPreview.PowerMetricsService */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A43A36F72F6CBA320086383E /* com.chrisizatt.PodcastPreview.PowerMetricsJobBless in CopyFiles */ = {isa = PBXBuildFile; fileRef = A43A36E72F6C94830086383E /* com.chrisizatt.PodcastPreview.PowerMetricsJobBless */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A4405A692F70021E0067D231 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4405A682F70021E0067D231 /* CoreAudio.framework */; };
+		A4405A6B2F7002280067D231 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4405A6A2F7002280067D231 /* CoreFoundation.framework */; };
+		A4716F2D2F6D7992001D2CBE /* PodcastPreviewCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4716F242F6D7992001D2CBE /* PodcastPreviewCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A4716F432F6D925B001D2CBE /* PodcastPreviewCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4716F242F6D7992001D2CBE /* PodcastPreviewCore.framework */; };
+		A4A4B4002F96DF7000CD950E /* PodcastPreviewShared in Frameworks */ = {isa = PBXBuildFile; productRef = BB2222223333444455556666 /* PodcastPreviewShared */; };
+		A4A4B5E42F96E04900CD950E /* PodcastPreviewShared in Frameworks */ = {isa = PBXBuildFile; productRef = A4A4B5E32F96E04900CD950E /* PodcastPreviewShared */; };
+		A4A4B5EB2F96E0B100CD950E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A4B5EA2F96E0B100CD950E /* WidgetKit.framework */; };
+		A4A4B5ED2F96E0B100CD950E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A4B5EC2F96E0B100CD950E /* SwiftUI.framework */; };
+		A4A4B5FC2F96E0B300CD950E /* PodcastPreviewMacWidgetsExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A4A4B5E92F96E0B100CD950E /* PodcastPreviewMacWidgetsExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A4A4B6072F96E0D800CD950E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A4B5EA2F96E0B100CD950E /* WidgetKit.framework */; };
+		A4A4B6082F96E0D800CD950E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A4B5EC2F96E0B100CD950E /* SwiftUI.framework */; };
+		A4A4B61E2F96E19100CD950E /* PodcastPreviewShared in Frameworks */ = {isa = PBXBuildFile; productRef = A4A4B61D2F96E19100CD950E /* PodcastPreviewShared */; };
+		A4A4B6202F96E19800CD950E /* PodcastPreviewShared in Frameworks */ = {isa = PBXBuildFile; productRef = A4A4B61F2F96E19800CD950E /* PodcastPreviewShared */; };
+		A4DBDD862F707EFC00FB4D13 /* PodcastPreviewAudioAgent in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4DBDD7A2F707DD500FB4D13 /* PodcastPreviewAudioAgent */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B10000012F90000100000001 /* PodcastPreviewHardwareAgent in CopyFiles */ = {isa = PBXBuildFile; fileRef = B10000012F90000100000005 /* PodcastPreviewHardwareAgent */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B10000012F90000100000002 /* PodcastPreviewCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4716F242F6D7992001D2CBE /* PodcastPreviewCore.framework */; };
+		B20000012F90000100000001 /* com.chrisizatt.PodcastPreview.HardwareJobBless in CopyFiles */ = {isa = PBXBuildFile; fileRef = B20000012F90000100000005 /* com.chrisizatt.PodcastPreview.HardwareJobBless */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B20000012F90000100000011 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = B20000012F90000100000010 /* GRDB */; };
+		CC000001000000000000AA0A /* PodcastPreviewCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4716F242F6D7992001D2CBE /* PodcastPreviewCore.framework */; };
+		CC000001000000000000AA0E /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = CC000001000000000000AA0D /* GRDB */; };
+		CCAABBCC11223344AABB0003 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = CCAABBCC11223344AABB0002 /* GRDB */; };
+		D1A000012F95000100000001 /* PodcastPreviewAudioDriver.driver in Copy Audio Driver */ = {isa = PBXBuildFile; fileRef = A4405A642F70014A0067D231 /* PodcastPreviewAudioDriver.driver */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DD000001000000000000AA0A /* PodcastPreviewShared in Frameworks */ = {isa = PBXBuildFile; productRef = DD000001000000000000AA0D /* PodcastPreviewShared */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A43A36CC2F6C2AF60086383E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4E6A82D2EE5356B005E39E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4A267F82F678809000BF5D1;
+			remoteInfo = PowerMetricsService;
+		};
+		A43A36EE2F6C966B0086383E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4E6A82D2EE5356B005E39E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A43A36E62F6C94830086383E;
+			remoteInfo = PowerMetricsJobBless;
+		};
+		A4716F2A2F6D7992001D2CBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4E6A82D2EE5356B005E39E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4716F232F6D7992001D2CBE;
+			remoteInfo = PodcastPreviewCore;
+		};
+		A4A4B5FA2F96E0B300CD950E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4E6A82D2EE5356B005E39E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4A4B5E82F96E0B100CD950E;
+			remoteInfo = PodcastPreviewMacWidgetsExtensionExtension;
+		};
+		A4DBDD8A2F707F8C00FB4D13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4E6A82D2EE5356B005E39E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4DBDD792F707DD500FB4D13;
+			remoteInfo = PodcastPreviewAudioAgent;
+		};
+		B10000012F90000100000003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4E6A82D2EE5356B005E39E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B10000012F90000100000007;
+			remoteInfo = PodcastPreviewHardwareAgent;
+		};
+		B10000012F90000100000004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4E6A82D2EE5356B005E39E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4716F232F6D7992001D2CBE;
+			remoteInfo = PodcastPreviewCore;
+		};
+		B20000012F90000100000003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4E6A82D2EE5356B005E39E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20000012F90000100000007;
+			remoteInfo = HardwareMonitoringJobBless;
+		};
+		CC000001000000000000AA0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4E6A82D2EE5356B005E39E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4716F232F6D7992001D2CBE;
+			remoteInfo = PodcastPreviewCore;
+		};
+		D1A000012F95000100000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4E6A82D2EE5356B005E39E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4405A632F70014A0067D231;
+			remoteInfo = PodcastPreviewAudioDriver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A43A36DD2F6C6A970086383E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchDaemons;
+			dstSubfolderSpec = 1;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A43A36F42F6CB9F50086383E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				A43A36F52F6CB9FE0086383E /* com.chrisizatt.PodcastPreview.PowerMetricsService in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A43A36F62F6CBA1F0086383E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				B10000012F90000100000001 /* PodcastPreviewHardwareAgent in CopyFiles */,
+				B20000012F90000100000001 /* com.chrisizatt.PodcastPreview.HardwareJobBless in CopyFiles */,
+				A4DBDD862F707EFC00FB4D13 /* PodcastPreviewAudioAgent in CopyFiles */,
+				A43A36F72F6CBA320086383E /* com.chrisizatt.PodcastPreview.PowerMetricsJobBless in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4716F2E2F6D7992001D2CBE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A4716F2D2F6D7992001D2CBE /* PodcastPreviewCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A4B6012F96E0B300CD950E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A4A4B5FC2F96E0B300CD950E /* PodcastPreviewMacWidgetsExtensionExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DBDD782F707DD500FB4D13 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A4DBDD872F707F0F00FB4D13 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchAgents;
+			dstSubfolderSpec = 1;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10000012F9000010000000A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B20000012F9000010000000A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D1A000012F95000100000003 /* Copy Audio Driver */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "Contents/Library/Audio/Plug-Ins/HAL";
+			dstSubfolderSpec = 1;
+			files = (
+				D1A000012F95000100000001 /* PodcastPreviewAudioDriver.driver in Copy Audio Driver */,
+			);
+			name = "Copy Audio Driver";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A43A36E72F6C94830086383E /* com.chrisizatt.PodcastPreview.PowerMetricsJobBless */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.chrisizatt.PodcastPreview.PowerMetricsJobBless; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4405A642F70014A0067D231 /* PodcastPreviewAudioDriver.driver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodcastPreviewAudioDriver.driver; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4405A682F70021E0067D231 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		A4405A6A2F7002280067D231 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A4716F242F6D7992001D2CBE /* PodcastPreviewCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PodcastPreviewCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A267F92F678809000BF5D1 /* com.chrisizatt.PodcastPreview.PowerMetricsService */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.chrisizatt.PodcastPreview.PowerMetricsService; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A4B5E92F96E0B100CD950E /* PodcastPreviewMacWidgetsExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PodcastPreviewMacWidgetsExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A4B5EA2F96E0B100CD950E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A4A4B5EC2F96E0B100CD950E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A4A4B6062F96E0D800CD950E /* PodcastPreviewWidgetsExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PodcastPreviewWidgetsExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A4B61B2F96E0F100CD950E /* PodcastPreviewWidgetsExtensionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PodcastPreviewWidgetsExtensionExtension.entitlements; sourceTree = "<group>"; };
+		A4A4B61C2F96E13F00CD950E /* PodcastPreviewMacWidgetsExtensionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PodcastPreviewMacWidgetsExtensionExtension.entitlements; sourceTree = "<group>"; };
+		A4D54AB82F9F0583005C5E5A /* PodcastPreviewMacWidgetsExtensionExtensionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PodcastPreviewMacWidgetsExtensionExtensionRelease.entitlements; sourceTree = "<group>"; };
+		A4D54AB92F9F059D005C5E5A /* PodcastPreviewWidgetsExtensionExtensionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PodcastPreviewWidgetsExtensionExtensionRelease.entitlements; sourceTree = "<group>"; };
+		A4DBDD7A2F707DD500FB4D13 /* PodcastPreviewAudioAgent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PodcastPreviewAudioAgent; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E6A8352EE5356B005E39E8 /* PodcastPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10000012F90000100000005 /* PodcastPreviewHardwareAgent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PodcastPreviewHardwareAgent; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20000012F90000100000005 /* com.chrisizatt.PodcastPreview.HardwareJobBless */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.chrisizatt.PodcastPreview.HardwareJobBless; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC000001000000000000AA02 /* PodcastPreviewCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastPreviewCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD000001000000000000AA02 /* PodcastPreviewCompanioniOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastPreviewCompanioniOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A4405A702F7004B10067D231 /* Exceptions for "PodcastPreview" folder in "PodcastPreviewAudioDriver" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AudioEngine/PodcastPreviewLoopbackTransport.c,
+				PodcastPreviewAudioDriver/PodcastPreviewAudioDriverPlugin.c,
+			);
+			target = A4405A632F70014A0067D231 /* PodcastPreviewAudioDriver */;
+		};
+		A4A268012F678881000BF5D1 /* Exceptions for "PodcastPreview" folder in "PowerMetricsService" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				PowerMetricsService/PowerMetricsServiceAvailability.swift,
+				PowerMetricsService/PowerMetricsServiceClient.swift,
+				PowerMetricsService/PowerMetricsServiceConstants.swift,
+				PowerMetricsService/PowerMetricsServiceDaemon.swift,
+				PowerMetricsService/PowerMetricsServiceMain.swift,
+				PowerMetricsService/PowerMetricsServiceRegistrar.swift,
+				PowerMetricsService/PowerMetricsXPCProtocol.swift,
+			);
+			target = A4A267F82F678809000BF5D1 /* PowerMetricsService */;
+		};
+		A4A4B6002F96E0B300CD950E /* Exceptions for "PodcastPreviewMacWidgetsExtension" folder in "PodcastPreviewMacWidgetsExtensionExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A4A4B5E82F96E0B100CD950E /* PodcastPreviewMacWidgetsExtensionExtension */;
+		};
+		A4A4B6172F96E0D900CD950E /* Exceptions for "PodcastPreviewWidgetsExtension" folder in "PodcastPreviewWidgetsExtensionExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A4A4B6052F96E0D800CD950E /* PodcastPreviewWidgetsExtensionExtension */;
+		};
+		A4C69ACE2F6CCCC400FEE03D /* Exceptions for "PodcastPreview" folder in "PowerMetricsJobBless" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				PowerMetricsService/PowerMetricsServiceConstants.swift,
+				PowerMetricsService/PowerMetricsServiceDaemon.swift,
+				PowerMetricsService/PowerMetricsServiceMain.swift,
+				PowerMetricsService/PowerMetricsXPCProtocol.swift,
+			);
+			target = A43A36E62F6C94830086383E /* PowerMetricsJobBless */;
+		};
+		A4E909EB2F6779D900BB33D5 /* Exceptions for "PodcastPreview" folder in "PodcastPreview" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"HardwareMonitoringService/HardwareMonitoringJobBless-Info.plist",
+				"HardwareMonitoringService/HardwareMonitoringJobBless-launchd.plist",
+				"HardwareMonitoringService/HardwareMonitoringService-Info.plist",
+				Info.plist,
+				"PowerMetricsService/PowerMetricsJobBless-launchd.plist",
+				"PowerMetricsService/PowerMetricsService-Helper-Info.plist",
+				"PowerMetricsService/PowerMetricsService-Info.plist",
+				PowerMetricsService/PowerMetricsServiceDaemon.swift,
+				PowerMetricsService/PowerMetricsServiceMain.swift,
+			);
+			target = A4E6A8342EE5356B005E39E8 /* PodcastPreview */;
+		};
+		B20000012F90000100000012 /* Exceptions for "PodcastPreviewCore" folder in "HardwareMonitoringJobBless" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppDebugConsole.swift,
+			);
+			target = B20000012F90000100000007 /* HardwareMonitoringJobBless */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		A43A36DF2F6C6B470086383E /* Exceptions for "PodcastPreview" folder in "Copy Files" phase from "PodcastPreview" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = A43A36DD2F6C6A970086383E /* CopyFiles */;
+			membershipExceptions = (
+				"HardwareMonitoringService/HardwareMonitoringService-Info.plist",
+				"PowerMetricsService/PowerMetricsService-Info.plist",
+			);
+		};
+		A4DBDD892F707F3900FB4D13 /* Exceptions for "PodcastPreview" folder in "Copy Files" phase from "PodcastPreview" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = A4DBDD872F707F0F00FB4D13 /* CopyFiles */;
+			membershipExceptions = (
+				"AudioRoutingService/PodcastPreviewAudioAgent-LaunchAgent.plist",
+				"HardwareMonitoringService/PodcastPreviewHardwareAgent-LaunchAgent.plist",
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A43A36E82F6C94830086383E /* PowerMetricsJobBless */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PowerMetricsJobBless;
+			sourceTree = "<group>";
+		};
+		A4716F252F6D7992001D2CBE /* PodcastPreviewCore */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B20000012F90000100000012 /* Exceptions for "PodcastPreviewCore" folder in "HardwareMonitoringJobBless" target */,
+			);
+			path = PodcastPreviewCore;
+			sourceTree = "<group>";
+		};
+		A4A267FA2F678809000BF5D1 /* PowerMetricsService */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PowerMetricsService;
+			sourceTree = "<group>";
+		};
+		A4A4B5EE2F96E0B100CD950E /* PodcastPreviewMacWidgetsExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A4A4B6002F96E0B300CD950E /* Exceptions for "PodcastPreviewMacWidgetsExtension" folder in "PodcastPreviewMacWidgetsExtensionExtension" target */,
+			);
+			path = PodcastPreviewMacWidgetsExtension;
+			sourceTree = "<group>";
+		};
+		A4A4B6092F96E0D800CD950E /* PodcastPreviewWidgetsExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A4A4B6172F96E0D900CD950E /* Exceptions for "PodcastPreviewWidgetsExtension" folder in "PodcastPreviewWidgetsExtensionExtension" target */,
+			);
+			path = PodcastPreviewWidgetsExtension;
+			sourceTree = "<group>";
+		};
+		A4DBDD7B2F707DD500FB4D13 /* PodcastPreviewAudioAgent */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PodcastPreviewAudioAgent;
+			sourceTree = "<group>";
+		};
+		A4E6A8372EE5356B005E39E8 /* PodcastPreview */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A4E909EB2F6779D900BB33D5 /* Exceptions for "PodcastPreview" folder in "PodcastPreview" target */,
+				A43A36DF2F6C6B470086383E /* Exceptions for "PodcastPreview" folder in "Copy Files" phase from "PodcastPreview" target */,
+				A4DBDD892F707F3900FB4D13 /* Exceptions for "PodcastPreview" folder in "Copy Files" phase from "PodcastPreview" target */,
+				A4A268012F678881000BF5D1 /* Exceptions for "PodcastPreview" folder in "PowerMetricsService" target */,
+				A4C69ACE2F6CCCC400FEE03D /* Exceptions for "PodcastPreview" folder in "PowerMetricsJobBless" target */,
+				A4405A702F7004B10067D231 /* Exceptions for "PodcastPreview" folder in "PodcastPreviewAudioDriver" target */,
+			);
+			path = PodcastPreview;
+			sourceTree = "<group>";
+		};
+		B10000012F90000100000006 /* PodcastPreviewHardwareAgent */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PodcastPreviewHardwareAgent;
+			sourceTree = "<group>";
+		};
+		CC000001000000000000AA06 /* PodcastPreviewCompanion */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PodcastPreviewCompanion;
+			sourceTree = "<group>";
+		};
+		DD000001000000000000AA06 /* PodcastPreviewCompanioniOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PodcastPreviewCompanioniOS;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A43A36E42F6C94830086383E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4405A612F70014A0067D231 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4405A6B2F7002280067D231 /* CoreFoundation.framework in Frameworks */,
+				A4405A692F70021E0067D231 /* CoreAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4716F212F6D7992001D2CBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A4B4002F96DF7000CD950E /* PodcastPreviewShared in Frameworks */,
+				CCAABBCC11223344AABB0003 /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A267F62F678809000BF5D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A4B5E62F96E0B100CD950E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A4B5ED2F96E0B100CD950E /* SwiftUI.framework in Frameworks */,
+				A4A4B6202F96E19800CD950E /* PodcastPreviewShared in Frameworks */,
+				A4A4B5EB2F96E0B100CD950E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A4B6032F96E0D800CD950E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A4B6082F96E0D800CD950E /* SwiftUI.framework in Frameworks */,
+				A4A4B61E2F96E19100CD950E /* PodcastPreviewShared in Frameworks */,
+				A4A4B6072F96E0D800CD950E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DBDD772F707DD500FB4D13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E6A8322EE5356B005E39E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4716F432F6D925B001D2CBE /* PodcastPreviewCore.framework in Frameworks */,
+				A4A4B5E42F96E04900CD950E /* PodcastPreviewShared in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10000012F90000100000009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000012F90000100000002 /* PodcastPreviewCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20000012F90000100000009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20000012F90000100000011 /* GRDB in Frameworks */,
+				4F72AD059CD90A986CF36287 /* PodcastPreviewShared in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC000001000000000000AA04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC000001000000000000AA0A /* PodcastPreviewCore.framework in Frameworks */,
+				CC000001000000000000AA0E /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD000001000000000000AA04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD000001000000000000AA0A /* PodcastPreviewShared in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4716F362F6D7A90001D2CBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4405A6A2F7002280067D231 /* CoreFoundation.framework */,
+				A4405A682F70021E0067D231 /* CoreAudio.framework */,
+				A4A4B5EA2F96E0B100CD950E /* WidgetKit.framework */,
+				A4A4B5EC2F96E0B100CD950E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4B4D4552F86B4B20024A0B8 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		A4E6A82C2EE5356B005E39E8 = {
+			isa = PBXGroup;
+			children = (
+				A4D54AB92F9F059D005C5E5A /* PodcastPreviewWidgetsExtensionExtensionRelease.entitlements */,
+				A4D54AB82F9F0583005C5E5A /* PodcastPreviewMacWidgetsExtensionExtensionRelease.entitlements */,
+				A4A4B61C2F96E13F00CD950E /* PodcastPreviewMacWidgetsExtensionExtension.entitlements */,
+				A4A4B61B2F96E0F100CD950E /* PodcastPreviewWidgetsExtensionExtension.entitlements */,
+				A4E6A8372EE5356B005E39E8 /* PodcastPreview */,
+				A4A267FA2F678809000BF5D1 /* PowerMetricsService */,
+				A43A36E82F6C94830086383E /* PowerMetricsJobBless */,
+				A4716F252F6D7992001D2CBE /* PodcastPreviewCore */,
+				A4DBDD7B2F707DD500FB4D13 /* PodcastPreviewAudioAgent */,
+				B10000012F90000100000006 /* PodcastPreviewHardwareAgent */,
+				CC000001000000000000AA06 /* PodcastPreviewCompanion */,
+				DD000001000000000000AA06 /* PodcastPreviewCompanioniOS */,
+				A4A4B5EE2F96E0B100CD950E /* PodcastPreviewMacWidgetsExtension */,
+				A4A4B6092F96E0D800CD950E /* PodcastPreviewWidgetsExtension */,
+				A4716F362F6D7A90001D2CBE /* Frameworks */,
+				A4E6A8362EE5356B005E39E8 /* Products */,
+				A4B4D4552F86B4B20024A0B8 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		A4E6A8362EE5356B005E39E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4E6A8352EE5356B005E39E8 /* PodcastPreview.app */,
+				A4A267F92F678809000BF5D1 /* com.chrisizatt.PodcastPreview.PowerMetricsService */,
+				A43A36E72F6C94830086383E /* com.chrisizatt.PodcastPreview.PowerMetricsJobBless */,
+				A4716F242F6D7992001D2CBE /* PodcastPreviewCore.framework */,
+				A4405A642F70014A0067D231 /* PodcastPreviewAudioDriver.driver */,
+				A4DBDD7A2F707DD500FB4D13 /* PodcastPreviewAudioAgent */,
+				B10000012F90000100000005 /* PodcastPreviewHardwareAgent */,
+				B20000012F90000100000005 /* com.chrisizatt.PodcastPreview.HardwareJobBless */,
+				CC000001000000000000AA02 /* PodcastPreviewCompanion.app */,
+				DD000001000000000000AA02 /* PodcastPreviewCompanioniOS.app */,
+				A4A4B5E92F96E0B100CD950E /* PodcastPreviewMacWidgetsExtensionExtension.appex */,
+				A4A4B6062F96E0D800CD950E /* PodcastPreviewWidgetsExtensionExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A4716F1F2F6D7992001D2CBE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A43A36E62F6C94830086383E /* PowerMetricsJobBless */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A43A36EB2F6C94830086383E /* Build configuration list for PBXNativeTarget "PowerMetricsJobBless" */;
+			buildPhases = (
+				A43A36E32F6C94830086383E /* Sources */,
+				A43A36E42F6C94830086383E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A43A36E82F6C94830086383E /* PowerMetricsJobBless */,
+			);
+			name = PowerMetricsJobBless;
+			productName = PowerMetricsJobBless;
+			productReference = A43A36E72F6C94830086383E /* com.chrisizatt.PodcastPreview.PowerMetricsJobBless */;
+			productType = "com.apple.product-type.tool";
+		};
+		A4405A632F70014A0067D231 /* PodcastPreviewAudioDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4405A652F70014A0067D231 /* Build configuration list for PBXNativeTarget "PodcastPreviewAudioDriver" */;
+			buildPhases = (
+				A4405A602F70014A0067D231 /* Sources */,
+				A4405A612F70014A0067D231 /* Frameworks */,
+				A4405A622F70014A0067D231 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PodcastPreviewAudioDriver;
+			productName = PodcastPreviewAudioDriver;
+			productReference = A4405A642F70014A0067D231 /* PodcastPreviewAudioDriver.driver */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A4716F232F6D7992001D2CBE /* PodcastPreviewCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4716F312F6D7992001D2CBE /* Build configuration list for PBXNativeTarget "PodcastPreviewCore" */;
+			buildPhases = (
+				A4716F1F2F6D7992001D2CBE /* Headers */,
+				A4716F202F6D7992001D2CBE /* Sources */,
+				A4716F212F6D7992001D2CBE /* Frameworks */,
+				A4716F222F6D7992001D2CBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A4716F252F6D7992001D2CBE /* PodcastPreviewCore */,
+			);
+			name = PodcastPreviewCore;
+			packageProductDependencies = (
+				CCAABBCC11223344AABB0002 /* GRDB */,
+				BB2222223333444455556666 /* PodcastPreviewShared */,
+			);
+			productName = PodcastPreviewCore;
+			productReference = A4716F242F6D7992001D2CBE /* PodcastPreviewCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A4A267F82F678809000BF5D1 /* PowerMetricsService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A267FD2F678809000BF5D1 /* Build configuration list for PBXNativeTarget "PowerMetricsService" */;
+			buildPhases = (
+				A4A267F52F678809000BF5D1 /* Sources */,
+				A4A267F62F678809000BF5D1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A4A267FA2F678809000BF5D1 /* PowerMetricsService */,
+			);
+			name = PowerMetricsService;
+			productName = PowerMetricsService;
+			productReference = A4A267F92F678809000BF5D1 /* com.chrisizatt.PodcastPreview.PowerMetricsService */;
+			productType = "com.apple.product-type.tool";
+		};
+		A4A4B5E82F96E0B100CD950E /* PodcastPreviewMacWidgetsExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A4B5FD2F96E0B300CD950E /* Build configuration list for PBXNativeTarget "PodcastPreviewMacWidgetsExtensionExtension" */;
+			buildPhases = (
+				A4A4B5E52F96E0B100CD950E /* Sources */,
+				A4A4B5E62F96E0B100CD950E /* Frameworks */,
+				A4A4B5E72F96E0B100CD950E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A4A4B5EE2F96E0B100CD950E /* PodcastPreviewMacWidgetsExtension */,
+			);
+			name = PodcastPreviewMacWidgetsExtensionExtension;
+			packageProductDependencies = (
+				A4A4B61F2F96E19800CD950E /* PodcastPreviewShared */,
+			);
+			productName = PodcastPreviewMacWidgetsExtensionExtension;
+			productReference = A4A4B5E92F96E0B100CD950E /* PodcastPreviewMacWidgetsExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A4A4B6052F96E0D800CD950E /* PodcastPreviewWidgetsExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A4B6182F96E0D900CD950E /* Build configuration list for PBXNativeTarget "PodcastPreviewWidgetsExtensionExtension" */;
+			buildPhases = (
+				A4A4B6022F96E0D800CD950E /* Sources */,
+				A4A4B6032F96E0D800CD950E /* Frameworks */,
+				A4A4B6042F96E0D800CD950E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A4A4B6092F96E0D800CD950E /* PodcastPreviewWidgetsExtension */,
+			);
+			name = PodcastPreviewWidgetsExtensionExtension;
+			packageProductDependencies = (
+				A4A4B61D2F96E19100CD950E /* PodcastPreviewShared */,
+			);
+			productName = PodcastPreviewWidgetsExtensionExtension;
+			productReference = A4A4B6062F96E0D800CD950E /* PodcastPreviewWidgetsExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A4DBDD792F707DD500FB4D13 /* PodcastPreviewAudioAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4DBDD7E2F707DD500FB4D13 /* Build configuration list for PBXNativeTarget "PodcastPreviewAudioAgent" */;
+			buildPhases = (
+				A4DBDD762F707DD500FB4D13 /* Sources */,
+				A4DBDD772F707DD500FB4D13 /* Frameworks */,
+				A4DBDD782F707DD500FB4D13 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A4DBDD7B2F707DD500FB4D13 /* PodcastPreviewAudioAgent */,
+			);
+			name = PodcastPreviewAudioAgent;
+			productName = PodcastPreviewAudioAgent;
+			productReference = A4DBDD7A2F707DD500FB4D13 /* PodcastPreviewAudioAgent */;
+			productType = "com.apple.product-type.tool";
+		};
+		A4E6A8342EE5356B005E39E8 /* PodcastPreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4E6A8402EE5356C005E39E8 /* Build configuration list for PBXNativeTarget "PodcastPreview" */;
+			buildPhases = (
+				A4E6A8312EE5356B005E39E8 /* Sources */,
+				A4E6A8332EE5356B005E39E8 /* Resources */,
+				A4E6A8322EE5356B005E39E8 /* Frameworks */,
+				A4716F2E2F6D7992001D2CBE /* Embed Frameworks */,
+				D1A000012F95000100000003 /* Copy Audio Driver */,
+				A43A36DD2F6C6A970086383E /* CopyFiles */,
+				A4DBDD872F707F0F00FB4D13 /* CopyFiles */,
+				A43A36F62F6CBA1F0086383E /* CopyFiles */,
+				A43A36F42F6CB9F50086383E /* CopyFiles */,
+				A4A4B6012F96E0B300CD950E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A43A36EF2F6C966B0086383E /* PBXTargetDependency */,
+				A43A36CD2F6C2AF60086383E /* PBXTargetDependency */,
+				A4716F2B2F6D7992001D2CBE /* PBXTargetDependency */,
+				A4DBDD8B2F707F8C00FB4D13 /* PBXTargetDependency */,
+				D1A000012F95000100000004 /* PBXTargetDependency */,
+				B10000012F9000010000000B /* PBXTargetDependency */,
+				B20000012F9000010000000B /* PBXTargetDependency */,
+				A4A4B5FB2F96E0B300CD950E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A4E6A8372EE5356B005E39E8 /* PodcastPreview */,
+			);
+			name = PodcastPreview;
+			packageProductDependencies = (
+				A4A4B5E32F96E04900CD950E /* PodcastPreviewShared */,
+			);
+			productName = PodcastPreview;
+			productReference = A4E6A8352EE5356B005E39E8 /* PodcastPreview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B10000012F90000100000007 /* PodcastPreviewHardwareAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B10000012F9000010000000F /* Build configuration list for PBXNativeTarget "PodcastPreviewHardwareAgent" */;
+			buildPhases = (
+				B10000012F90000100000008 /* Sources */,
+				B10000012F90000100000009 /* Frameworks */,
+				B10000012F9000010000000A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B10000012F9000010000000C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B10000012F90000100000006 /* PodcastPreviewHardwareAgent */,
+			);
+			name = PodcastPreviewHardwareAgent;
+			productName = PodcastPreviewHardwareAgent;
+			productReference = B10000012F90000100000005 /* PodcastPreviewHardwareAgent */;
+			productType = "com.apple.product-type.tool";
+		};
+		B20000012F90000100000007 /* HardwareMonitoringJobBless */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20000012F9000010000000F /* Build configuration list for PBXNativeTarget "HardwareMonitoringJobBless" */;
+			buildPhases = (
+				B20000012F90000100000008 /* Sources */,
+				B20000012F90000100000009 /* Frameworks */,
+				B20000012F9000010000000A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A4716F252F6D7992001D2CBE /* PodcastPreviewCore */,
+				B10000012F90000100000006 /* PodcastPreviewHardwareAgent */,
+			);
+			name = HardwareMonitoringJobBless;
+			packageProductDependencies = (
+				B20000012F90000100000010 /* GRDB */,
+				BB2222223333444455556666 /* PodcastPreviewShared */,
+			);
+			productName = com.chrisizatt.PodcastPreview.HardwareJobBless;
+			productReference = B20000012F90000100000005 /* com.chrisizatt.PodcastPreview.HardwareJobBless */;
+			productType = "com.apple.product-type.tool";
+		};
+		CC000001000000000000AA01 /* PodcastPreviewCompanion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC000001000000000000AA09 /* Build configuration list for PBXNativeTarget "PodcastPreviewCompanion" */;
+			buildPhases = (
+				CC000001000000000000AA03 /* Sources */,
+				CC000001000000000000AA04 /* Frameworks */,
+				CC000001000000000000AA05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC000001000000000000AA0C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CC000001000000000000AA06 /* PodcastPreviewCompanion */,
+			);
+			name = PodcastPreviewCompanion;
+			packageProductDependencies = (
+				CC000001000000000000AA0D /* GRDB */,
+			);
+			productName = PodcastPreviewCompanion;
+			productReference = CC000001000000000000AA02 /* PodcastPreviewCompanion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD000001000000000000AA01 /* PodcastPreviewCompanioniOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD000001000000000000AA09 /* Build configuration list for PBXNativeTarget "PodcastPreviewCompanioniOS" */;
+			buildPhases = (
+				DD000001000000000000AA03 /* Sources */,
+				DD000001000000000000AA04 /* Frameworks */,
+				DD000001000000000000AA05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DD000001000000000000AA06 /* PodcastPreviewCompanioniOS */,
+			);
+			name = PodcastPreviewCompanioniOS;
+			packageProductDependencies = (
+				DD000001000000000000AA0D /* PodcastPreviewShared */,
+			);
+			productName = PodcastPreviewCompanioniOS;
+			productReference = DD000001000000000000AA02 /* PodcastPreviewCompanioniOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4E6A82D2EE5356B005E39E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					A43A36E62F6C94830086383E = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					A4405A632F70014A0067D231 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					A4716F232F6D7992001D2CBE = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					A4A267F82F678809000BF5D1 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					A4A4B5E82F96E0B100CD950E = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					A4A4B6052F96E0D800CD950E = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					A4DBDD792F707DD500FB4D13 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					A4E6A8342EE5356B005E39E8 = {
+						CreatedOnToolsVersion = 26.0;
+						LastSwiftMigration = 2600;
+					};
+					B10000012F90000100000007 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					B20000012F90000100000007 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					DD000001000000000000AA01 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+				};
+			};
+			buildConfigurationList = A4E6A8302EE5356B005E39E8 /* Build configuration list for PBXProject "PodcastPreview" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4E6A82C2EE5356B005E39E8;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CCAABBCC11223344AABB0001 /* XCRemoteSwiftPackageReference "GRDB" */,
+				A4A4B5E22F96E04900CD950E /* XCLocalSwiftPackageReference "PodcastPreviewShared" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A4E6A8362EE5356B005E39E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4E6A8342EE5356B005E39E8 /* PodcastPreview */,
+				A4A267F82F678809000BF5D1 /* PowerMetricsService */,
+				A43A36E62F6C94830086383E /* PowerMetricsJobBless */,
+				A4716F232F6D7992001D2CBE /* PodcastPreviewCore */,
+				A4405A632F70014A0067D231 /* PodcastPreviewAudioDriver */,
+				A4DBDD792F707DD500FB4D13 /* PodcastPreviewAudioAgent */,
+				B10000012F90000100000007 /* PodcastPreviewHardwareAgent */,
+				B20000012F90000100000007 /* HardwareMonitoringJobBless */,
+				CC000001000000000000AA01 /* PodcastPreviewCompanion */,
+				DD000001000000000000AA01 /* PodcastPreviewCompanioniOS */,
+				A4A4B5E82F96E0B100CD950E /* PodcastPreviewMacWidgetsExtensionExtension */,
+				A4A4B6052F96E0D800CD950E /* PodcastPreviewWidgetsExtensionExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4405A622F70014A0067D231 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4716F222F6D7992001D2CBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A4B5E72F96E0B100CD950E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A4B6042F96E0D800CD950E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E6A8332EE5356B005E39E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC000001000000000000AA05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD000001000000000000AA05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A43A36E32F6C94830086383E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4405A602F70014A0067D231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4716F202F6D7992001D2CBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A267F52F678809000BF5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A4B5E52F96E0B100CD950E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A4B6022F96E0D800CD950E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DBDD762F707DD500FB4D13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E6A8312EE5356B005E39E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10000012F90000100000008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20000012F90000100000008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC000001000000000000AA03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD000001000000000000AA03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A43A36CD2F6C2AF60086383E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4A267F82F678809000BF5D1 /* PowerMetricsService */;
+			targetProxy = A43A36CC2F6C2AF60086383E /* PBXContainerItemProxy */;
+		};
+		A43A36EF2F6C966B0086383E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A43A36E62F6C94830086383E /* PowerMetricsJobBless */;
+			targetProxy = A43A36EE2F6C966B0086383E /* PBXContainerItemProxy */;
+		};
+		A4716F2B2F6D7992001D2CBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4716F232F6D7992001D2CBE /* PodcastPreviewCore */;
+			targetProxy = A4716F2A2F6D7992001D2CBE /* PBXContainerItemProxy */;
+		};
+		A4A4B5FB2F96E0B300CD950E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4A4B5E82F96E0B100CD950E /* PodcastPreviewMacWidgetsExtensionExtension */;
+			targetProxy = A4A4B5FA2F96E0B300CD950E /* PBXContainerItemProxy */;
+		};
+		A4DBDD8B2F707F8C00FB4D13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4DBDD792F707DD500FB4D13 /* PodcastPreviewAudioAgent */;
+			targetProxy = A4DBDD8A2F707F8C00FB4D13 /* PBXContainerItemProxy */;
+		};
+		B10000012F9000010000000B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B10000012F90000100000007 /* PodcastPreviewHardwareAgent */;
+			targetProxy = B10000012F90000100000003 /* PBXContainerItemProxy */;
+		};
+		B10000012F9000010000000C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4716F232F6D7992001D2CBE /* PodcastPreviewCore */;
+			targetProxy = B10000012F90000100000004 /* PBXContainerItemProxy */;
+		};
+		B20000012F9000010000000B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B20000012F90000100000007 /* HardwareMonitoringJobBless */;
+			targetProxy = B20000012F90000100000003 /* PBXContainerItemProxy */;
+		};
+		CC000001000000000000AA0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4716F232F6D7992001D2CBE /* PodcastPreviewCore */;
+			targetProxy = CC000001000000000000AA0B /* PBXContainerItemProxy */;
+		};
+		D1A000012F95000100000004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4405A632F70014A0067D231 /* PodcastPreviewAudioDriver */;
+			targetProxy = D1A000012F95000100000002 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A43A36EC2F6C94830086383E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/PodcastPreview/PowerMetricsService/PowerMetricsService-Helper-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(PROJECT_DIR)/PodcastPreview/PowerMetricsService/PowerMetricsJobBless-launchd.plist",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreview.PowerMetricsJobBless;
+				PRODUCT_NAME = com.chrisizatt.PodcastPreview.PowerMetricsJobBless;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = YES;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		A43A36ED2F6C94830086383E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AUTOMATION_APPLE_EVENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/PodcastPreview/PowerMetricsService/PowerMetricsService-Helper-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(PROJECT_DIR)/PodcastPreview/PowerMetricsService/PowerMetricsJobBless-launchd.plist",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreview.PowerMetricsJobBless;
+				PRODUCT_NAME = com.chrisizatt.PodcastPreview.PowerMetricsJobBless;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		A4405A662F70014A0067D231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/PodcastPreview/PodcastPreviewAudioDriver/PodcastPreviewAudioDriver-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "/Library/Audio/Plug-Ins/HAL";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreviewAudioDriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = driver;
+			};
+			name = Debug;
+		};
+		A4405A672F70014A0067D231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/PodcastPreview/PodcastPreviewAudioDriver/PodcastPreviewAudioDriver-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "/Library/Audio/Plug-Ins/HAL";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreviewAudioDriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = driver;
+			};
+			name = Release;
+		};
+		A4716F2F2F6D7992001D2CBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath/PodcastPreviewCore.framework/PodcastPreviewCore";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "@rpath";
+				LD_DYLIB_INSTALL_NAME = "@rpath/PodcastPreviewCore.framework/PodcastPreviewCore";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreviewCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A4716F302F6D7992001D2CBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath/PodcastPreviewCore.framework/PodcastPreviewCore";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "@rpath";
+				LD_DYLIB_INSTALL_NAME = "@rpath/PodcastPreviewCore.framework/PodcastPreviewCore";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreviewCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A4A267FE2F678809000BF5D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AUTOMATION_APPLE_EVENTS = NO;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.chrisizatt.PodcastPreview.PowerMetricsService;
+				PRODUCT_NAME = com.chrisizatt.PodcastPreview.PowerMetricsService;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = YES;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A4A267FF2F678809000BF5D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.chrisizatt.PodcastPreview.PowerMetricsService;
+				PRODUCT_NAME = com.chrisizatt.PodcastPreview.PowerMetricsService;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A4A4B5FE2F96E0B300CD950E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PodcastPreviewMacWidgetsExtensionExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PodcastPreviewMacWidgetsExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PodcastPreviewMacWidgetsExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreview.PodcastPreviewMacWidgetsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A4A4B5FF2F96E0B300CD950E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PodcastPreviewMacWidgetsExtensionExtensionRelease.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PodcastPreviewMacWidgetsExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PodcastPreviewMacWidgetsExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreview.PodcastPreviewMacWidgetsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A4A4B6192F96E0D900CD950E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PodcastPreviewWidgetsExtensionExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PodcastPreviewWidgetsExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PodcastPreviewWidgetsExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreviewWidgetsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4A4B61A2F96E0D900CD950E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PodcastPreviewWidgetsExtensionExtensionRelease.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PodcastPreviewWidgetsExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PodcastPreviewWidgetsExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreviewWidgetsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4DBDD7F2F707DD500FB4D13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/PodcastPreview/AudioRoutingService/PodcastPreviewAudioAgent-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreview.AudioAgent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/PodcastPreviewAudioAgent/PodcastPreviewAudioAgent-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A4DBDD802F707DD500FB4D13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/PodcastPreview/AudioRoutingService/PodcastPreviewAudioAgent-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreview.AudioAgent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/PodcastPreviewAudioAgent/PodcastPreviewAudioAgent-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A4E6A83E2EE5356C005E39E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4E6A83F2EE5356C005E39E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A4E6A8412EE5356C005E39E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				AUTOMATION_APPLE_EVENTS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PodcastPreview/PodcastPreview.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_DEBUG_DYLIB = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/PodcastPreview/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = AVDash;
+				INFOPLIST_KEY_NSAudioCaptureUsageDescription = "AVDash needs access to captured system audio so the Stereo Output meter can follow the current macOS output mix.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "AVDash needs camera access for video monitoring and preview.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "AVDash needs access to the microphone for metering purposes";
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = YES;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/PodcastPreview/PodcastPreview-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A4E6A8422EE5356C005E39E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				AUTOMATION_APPLE_EVENTS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PodcastPreview/PodcastPreview.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_DEBUG_DYLIB = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/PodcastPreview/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = AVDash;
+				INFOPLIST_KEY_NSAudioCaptureUsageDescription = "AVDash needs access to captured system audio so the Stereo Output meter can follow the current macOS output mix.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "AVDash needs camera access for video monitoring and preview.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "AVDash needs access to the microphone for metering purposes";
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/PodcastPreview/PodcastPreview-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B10000012F9000010000000D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/PodcastPreview/HardwareMonitoringService/PodcastPreviewHardwareAgent-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../../Frameworks",
+					"@loader_path/../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreview.HardwareAgent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B10000012F9000010000000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/PodcastPreview/HardwareMonitoringService/PodcastPreviewHardwareAgent-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../../Frameworks",
+					"@loader_path/../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreview.HardwareAgent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B20000012F9000010000000D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/PodcastPreview/HardwareMonitoringService/HardwareMonitoringJobBless-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(PROJECT_DIR)/PodcastPreview/HardwareMonitoringService/HardwareMonitoringJobBless-launchd.plist",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreview.HardwareJobBless;
+				PRODUCT_NAME = com.chrisizatt.PodcastPreview.HardwareJobBless;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "HARDWARE_JOBBLESS_EMBEDS_CORE $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B20000012F9000010000000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/PodcastPreview/HardwareMonitoringService/HardwareMonitoringJobBless-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(PROJECT_DIR)/PodcastPreview/HardwareMonitoringService/HardwareMonitoringJobBless-launchd.plist",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreview.HardwareJobBless;
+				PRODUCT_NAME = com.chrisizatt.PodcastPreview.HardwareJobBless;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "HARDWARE_JOBBLESS_EMBEDS_CORE $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CC000001000000000000AA07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGN_ENTITLEMENTS = PodcastPreviewCompanion/PodcastPreviewCompanion.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreview.Companion;
+				PRODUCT_NAME = PodcastPreviewCompanion;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CC000001000000000000AA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGN_ENTITLEMENTS = PodcastPreviewCompanion/PodcastPreviewCompanion.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreview.Companion;
+				PRODUCT_NAME = PodcastPreviewCompanion;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DD000001000000000000AA07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PodcastPreviewCompanioniOS/PodcastPreviewCompanioniOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AVDash;
+				INFOPLIST_KEY_CFBundleName = AVDash;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreview.Companion.iOS;
+				PRODUCT_NAME = PodcastPreviewCompanioniOS;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD000001000000000000AA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PodcastPreviewCompanioniOS/PodcastPreviewCompanioniOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8CZML8FK2D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AVDash;
+				INFOPLIST_KEY_CFBundleName = AVDash;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisizatt.PodcastPreview.Companion.iOS;
+				PRODUCT_NAME = PodcastPreviewCompanioniOS;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A43A36EB2F6C94830086383E /* Build configuration list for PBXNativeTarget "PowerMetricsJobBless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A43A36EC2F6C94830086383E /* Debug */,
+				A43A36ED2F6C94830086383E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4405A652F70014A0067D231 /* Build configuration list for PBXNativeTarget "PodcastPreviewAudioDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4405A662F70014A0067D231 /* Debug */,
+				A4405A672F70014A0067D231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4716F312F6D7992001D2CBE /* Build configuration list for PBXNativeTarget "PodcastPreviewCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4716F2F2F6D7992001D2CBE /* Debug */,
+				A4716F302F6D7992001D2CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4A267FD2F678809000BF5D1 /* Build configuration list for PBXNativeTarget "PowerMetricsService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A267FE2F678809000BF5D1 /* Debug */,
+				A4A267FF2F678809000BF5D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4A4B5FD2F96E0B300CD950E /* Build configuration list for PBXNativeTarget "PodcastPreviewMacWidgetsExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A4B5FE2F96E0B300CD950E /* Debug */,
+				A4A4B5FF2F96E0B300CD950E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4A4B6182F96E0D900CD950E /* Build configuration list for PBXNativeTarget "PodcastPreviewWidgetsExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A4B6192F96E0D900CD950E /* Debug */,
+				A4A4B61A2F96E0D900CD950E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4DBDD7E2F707DD500FB4D13 /* Build configuration list for PBXNativeTarget "PodcastPreviewAudioAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4DBDD7F2F707DD500FB4D13 /* Debug */,
+				A4DBDD802F707DD500FB4D13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4E6A8302EE5356B005E39E8 /* Build configuration list for PBXProject "PodcastPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4E6A83E2EE5356C005E39E8 /* Debug */,
+				A4E6A83F2EE5356C005E39E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4E6A8402EE5356C005E39E8 /* Build configuration list for PBXNativeTarget "PodcastPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4E6A8412EE5356C005E39E8 /* Debug */,
+				A4E6A8422EE5356C005E39E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B10000012F9000010000000F /* Build configuration list for PBXNativeTarget "PodcastPreviewHardwareAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10000012F9000010000000D /* Debug */,
+				B10000012F9000010000000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20000012F9000010000000F /* Build configuration list for PBXNativeTarget "HardwareMonitoringJobBless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20000012F9000010000000D /* Debug */,
+				B20000012F9000010000000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC000001000000000000AA09 /* Build configuration list for PBXNativeTarget "PodcastPreviewCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC000001000000000000AA07 /* Debug */,
+				CC000001000000000000AA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD000001000000000000AA09 /* Build configuration list for PBXNativeTarget "PodcastPreviewCompanioniOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD000001000000000000AA07 /* Debug */,
+				DD000001000000000000AA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A4A4B5E22F96E04900CD950E /* XCLocalSwiftPackageReference "PodcastPreviewShared" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = PodcastPreviewShared;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CCAABBCC11223344AABB0001 /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4A4B5E32F96E04900CD950E /* PodcastPreviewShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4A4B5E22F96E04900CD950E /* XCLocalSwiftPackageReference "PodcastPreviewShared" */;
+			productName = PodcastPreviewShared;
+		};
+		A4A4B61D2F96E19100CD950E /* PodcastPreviewShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4A4B5E22F96E04900CD950E /* XCLocalSwiftPackageReference "PodcastPreviewShared" */;
+			productName = PodcastPreviewShared;
+		};
+		A4A4B61F2F96E19800CD950E /* PodcastPreviewShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4A4B5E22F96E04900CD950E /* XCLocalSwiftPackageReference "PodcastPreviewShared" */;
+			productName = PodcastPreviewShared;
+		};
+		B20000012F90000100000010 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCAABBCC11223344AABB0001 /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+		BB2222223333444455556666 /* PodcastPreviewShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4A4B5E22F96E04900CD950E /* XCLocalSwiftPackageReference "PodcastPreviewShared" */;
+			productName = PodcastPreviewShared;
+		};
+		CC000001000000000000AA0D /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCAABBCC11223344AABB0001 /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+		CCAABBCC11223344AABB0002 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCAABBCC11223344AABB0001 /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+		DD000001000000000000AA0D /* PodcastPreviewShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4A4B5E22F96E04900CD950E /* XCLocalSwiftPackageReference "PodcastPreviewShared" */;
+			productName = PodcastPreviewShared;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A4E6A82D2EE5356B005E39E8 /* Project object */;
+}

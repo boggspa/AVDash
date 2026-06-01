@@ -1,0 +1,72 @@
+# macOS
+.DS_Store
+
+# Xcode user/build products
+build/
+DerivedData/
+.derivedData*/
+.swift-module-cache*/
+*.hmap
+*.ipa
+*.moved-aside
+*.xcuserstate
+*.xccheckout
+*.xcuserdatad/
+xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# Swift Package Manager and compiler caches
+.build/
+.swiftpm/
+.spm-cache/
+.module-cache/
+
+# Locally generated external frameworks and vendor build products
+.avcmeterkit-build/
+.firewirenetbridge-build/
+VendorBuild/
+Artifacts/External/
+
+# Private signing, notarization, and App Store Connect material
+.env
+.env.*
+*.p8
+*.p12
+*.cer
+*.mobileprovision
+*.provisionprofile
+Packaging/Private/
+Scripts/*notary*private*.sh
+Scripts/*notar*private*.sh
+Scripts/local_notary*.sh
+
+# Agent/tool state
+.codex-home/
+.claude/
+
+# Local logs and project backups
+*.log
+build_errors.txt
+*.pbxproj.backup
+
+# One-off local migration/debug helpers
+/add_package.rb
+/add_widget_extensions.rb
+/embed_firewire.rb
+/exclude_macos_files.rb
+/find_avc.rb
+/find_ref.rb
+/fix_*.rb
+/fix_wrapping.py
+/inspect_embeds.rb
+/link_core.rb
+/modify_shapes.py
+/reinclude_files.rb
+/restore_widgets*.rb
+/revert_deployment_target.rb
+/wrap_*.py
+/TestApp.swift
+/TestShape.swift
+/PROJECT_ARCHITECTURE.md
+/WIDGET_SETUP_INSTRUCTIONS.md

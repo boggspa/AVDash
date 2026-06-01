@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.chrisizatt.PodcastPreview</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>AVDash</string>
+	<key>CFBundleDisplayName</key>
+	<string>AVDash</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_ppremotehw._tcp</string>
+	</array>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>AVDash uses the local network to discover and connect to trusted remote monitoring devices on your network.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>AVDash needs speech recognition access to transcribe selected audio for captions and kinetic word visualisers.</string>
+	<key>SMPrivilegedExecutables</key>
+	<dict>
+		<key>com.chrisizatt.PodcastPreview.HardwareAgent</key>
+		<string>anchor apple generic and identifier "com.chrisizatt.PodcastPreview.HardwareAgent" and (certificate leaf[field.1.2.840.113635.100.6.1.9] or certificate 1[field.1.2.840.113635.100.6.2.6] and certificate leaf[field.1.2.840.113635.100.6.1.13] and certificate leaf[subject.OU] = "8CZML8FK2D")</string>
+		<key>com.chrisizatt.PodcastPreview.HardwareJobBless</key>
+		<string>identifier "com.chrisizatt.PodcastPreview.HardwareJobBless" and anchor apple generic and certificate leaf[subject.OU] = "8CZML8FK2D"</string>
+		<key>com.chrisizatt.PodcastPreview.PowerMetricsJobBless</key>
+		<string>identifier "com.chrisizatt.PodcastPreview.PowerMetricsJobBless" and anchor apple generic and certificate leaf[subject.OU] = "8CZML8FK2D"</string>
+		<key>com.chrisizatt.PodcastPreview.PowerMetricsService</key>
+		<string>anchor apple generic and identifier "com.chrisizatt.PodcastPreview.PowerMetricsService" and (certificate leaf[field.1.2.840.113635.100.6.1.9] or certificate 1[field.1.2.840.113635.100.6.2.6] and certificate leaf[field.1.2.840.113635.100.6.1.13] and certificate leaf[subject.OU] = "8CZML8FK2D")</string>
+	</dict>
+</dict>
+</plist>

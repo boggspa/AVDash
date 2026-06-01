@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Label must match the helper bundle ID -->
+	<key>Label</key>
+	<string>com.chrisizatt.PodcastPreview.PowerMetricsService</string>
+	
+	<!-- MachServices: The Mach service name this daemon publishes for XPC -->
+	<key>MachServices</key>
+	<dict>
+		<key>com.chrisizatt.PodcastPreview.PowerMetricsService</key>
+		<true/>
+	</dict>
+	
+	<!-- BundleProgram: Relative path to the daemon executable inside the app bundle -->
+	<key>BundleProgram</key>
+	<string>Contents/Library/LaunchServices/com.chrisizatt.PodcastPreview.PowerMetricsService</string>
+	
+	<!-- RunAtLoad: Don't auto-start, only run when XPC connection is made -->
+	<key>RunAtLoad</key>
+	<false/>
+	
+	<!-- KeepAlive: Keep daemon alive while XPC connections exist -->
+	<key>KeepAlive</key>
+	<dict>
+		<key>SuccessfulExit</key>
+		<false/>
+	</dict>
+	
+	<!-- StandardErrorPath: Optional - useful for debugging -->
+	<key>StandardErrorPath</key>
+	<string>/tmp/PowerMetricsService.stderr</string>
+	
+	<key>StandardOutPath</key>
+	<string>/tmp/PowerMetricsService.stdout</string>
+</dict>
+</plist>

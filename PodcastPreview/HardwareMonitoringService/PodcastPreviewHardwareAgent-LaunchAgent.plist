@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.chrisizatt.PodcastPreview.HardwareAgent</string>
+
+    <key>MachServices</key>
+    <dict>
+        <key>com.chrisizatt.PodcastPreview.HardwareAgent</key>
+        <true/>
+    </dict>
+
+    <key>BundleProgram</key>
+    <string>Contents/Library/LaunchServices/PodcastPreviewHardwareAgent</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+
+    <key>StandardErrorPath</key>
+    <string>/tmp/PodcastPreviewHardwareAgent.stderr</string>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/PodcastPreviewHardwareAgent.stdout</string>
+</dict>
+</plist>

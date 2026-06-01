@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.chrisizatt.PodcastPreview.HardwareJobBless</string>
+    <key>MachServices</key>
+    <dict>
+        <key>com.chrisizatt.PodcastPreview.HardwareJobBless</key>
+        <true/>
+    </dict>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>/tmp/PodcastPreviewHardwareJobBless.stdout</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/PodcastPreviewHardwareJobBless.stderr</string>
+</dict>
+</plist>
