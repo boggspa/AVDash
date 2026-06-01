@@ -1,11 +1,14 @@
 {
   "images" : [
     {
+      "filename" : "AVDash-iOS-ClearDark-1024x1024@1x.png",
       "idiom" : "universal",
       "platform" : "ios",
+      "scale" : "1x",
       "size" : "1024x1024"
     },
     {
+      "filename" : "AVDash-iOS-ClearDark-1024x1024@1x.png",
       "appearances" : [
         {
           "appearance" : "luminosity",
@@ -14,9 +17,11 @@
       ],
       "idiom" : "universal",
       "platform" : "ios",
+      "scale" : "1x",
       "size" : "1024x1024"
     },
     {
+      "filename" : "AVDash-iOS-TintedDark-1024x1024@1x.png",
       "appearances" : [
         {
           "appearance" : "luminosity",
@@ -25,6 +30,7 @@
       ],
       "idiom" : "universal",
       "platform" : "ios",
+      "scale" : "1x",
       "size" : "1024x1024"
     }
   ],

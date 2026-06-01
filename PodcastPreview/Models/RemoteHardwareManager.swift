@@ -187,7 +187,7 @@ final class RemoteHardwareManager: ObservableObject {
     // MARK: - Connections
 
     func connect(to machine: RemoteMonitoringClient.DiscoveredMachine, passcode: String) {
-        client.connect(to: machine, passcode: passcode)
+        _ = client.connect(to: machine, passcode: passcode)
     }
 
     func connectByAddress(_ address: String, port: UInt16, passcode: String) {

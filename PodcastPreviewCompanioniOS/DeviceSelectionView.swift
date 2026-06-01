@@ -11,7 +11,7 @@ struct DeviceSelectionView: View {
                 Text("Select a Mac")
                     .font(.system(size: 28, weight: .semibold, design: .rounded))
                     .foregroundStyle(GraphiteSlateTheme.primaryText)
-                Text("Choose a CloudKit source Mac to mirror in the companion dashboard.")
+                Text("Choose an iCloud source Mac to mirror in the companion dashboard.")
                     .font(.system(size: 14, weight: .medium))
                     .foregroundStyle(GraphiteSlateTheme.secondaryText)
             }
@@ -46,7 +46,7 @@ struct DeviceSelectionView: View {
     private var loadingState: some View {
         VStack(spacing: 12) {
             ProgressView()
-            Text("Loading CloudKit machines...")
+            Text("Loading iCloud machines...")
                 .font(.system(size: 16, weight: .semibold))
                 .foregroundStyle(GraphiteSlateTheme.primaryText)
         }

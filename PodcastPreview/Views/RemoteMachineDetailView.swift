@@ -374,6 +374,7 @@ struct RemoteMachineDetailView: View {
         case .awaitingApproval: return "Waiting for approval..."
         case .failed(let reason): return "Failed: \(reason)"
         case .disconnected: return "Disconnected"
+        @unknown default: return "Disconnected"
         }
     }
 }

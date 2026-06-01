@@ -2,6 +2,7 @@ import PodcastPreviewShared
 import CloudKit
 import Foundation
 import Combine
+import OSLog
 
 @MainActor
 final class CloudKitCompanionStore: ObservableObject {
@@ -17,6 +18,10 @@ final class CloudKitCompanionStore: ObservableObject {
     private let database: CKDatabase
     private let machineListStore: CloudKitMachineListStore
     private let snapshotStore: CloudKitMachineSnapshotStore
+    private let logger = Logger(
+        subsystem: Bundle.main.bundleIdentifier ?? "com.chrisizatt.PodcastPreview.Companion.iOS",
+        category: "CloudKitCompanion"
+    )
     private var autoRefreshTask: Task<Void, Never>?
 
     init(container: CKContainer = CKContainer(identifier: CompanionCloudKitSchema.containerIdentifier)) {
@@ -79,8 +84,8 @@ final class CloudKitCompanionStore: ObservableObject {
                     } else {
                         let machineLabel = machines.count == 1 ? "source Mac" : "\(machines.count) source Macs"
                         self.lastErrorMessage = currentSnapshots.isEmpty
-                        ? "Found \(machineLabel), but no live CloudKit snapshot is available yet. This usually means the Mac published its identity record but failed to save the CurrentSnapshot payload."
-                        : "Found \(machineLabel), but no dashboard snapshot is available yet. The Mac is publishing live data, but the full dashboard record has not landed in CloudKit yet."
+                        ? "Found \(machineLabel), but no live snapshot has arrived yet. Open AVDash on the Mac and confirm iOS Companion Sync is enabled."
+                        : "Found \(machineLabel), but detailed history has not finished syncing yet. Keep AVDash open on the Mac and refresh."
                     }
 
                     self.isLoading = false
@@ -96,6 +101,7 @@ final class CloudKitCompanionStore: ObservableObject {
 
                 await refreshSelectedMachineDetails()
             } catch {
+                self.logCloudKitError(error, context: "refresh")
                 self.currentSnapshots = []
                 self.snapshots = []
                 self.machines = []
@@ -135,25 +141,33 @@ final class CloudKitCompanionStore: ObservableObject {
     private func userFacingCloudKitMessage(for error: Error) -> String {
         let rawMessage = error.localizedDescription
         let lowercasedMessage = rawMessage.lowercased()
-        let bundleID = Bundle.main.bundleIdentifier ?? "unknown bundle"
-        let containerID = CompanionCloudKitSchema.containerIdentifier
 
         if lowercasedMessage.contains("invalid bundle id") || lowercasedMessage.contains("invalid bundle identifier") {
-            return "CloudKit rejected this build because \(bundleID) is not enabled for \(containerID). Enable iCloud/CloudKit for this App ID, add the container, then regenerate and reinstall the provisioning profile."
+            return "This build is not connected to the AVDash iCloud container. Install the latest TestFlight or App Store build, then refresh."
         }
 
         if let cloudKitError = error as? CKError {
             switch cloudKitError.code {
             case .notAuthenticated:
-                return "iCloud is not signed in for this device. Sign in to iCloud, enable iCloud Drive/CloudKit access, then refresh."
+                return "Sign in to iCloud on this device, then reopen AVDash and refresh."
             case .permissionFailure:
-                return "CloudKit denied access for \(bundleID). Check that the provisioning profile includes \(containerID) and that this App ID is attached to the container."
+                return "This build does not have access to the AVDash iCloud container. Install the latest TestFlight or App Store build, then refresh."
+            case .networkUnavailable, .networkFailure:
+                return "AVDash cannot reach iCloud right now. Check the network connection, then refresh."
+            case .serviceUnavailable, .requestRateLimited:
+                return "iCloud is temporarily unavailable. Wait a moment, then refresh."
+            case .quotaExceeded:
+                return "iCloud storage is full for this account. Free up iCloud storage, then refresh."
             default:
                 break
             }
         }
 
-        return rawMessage
+        return "AVDash could not load iCloud companion data. Check iCloud and network status, then refresh."
+    }
+
+    private func logCloudKitError(_ error: Error, context: String) {
+        logger.error("CloudKit \(context, privacy: .public) failed: \(error.localizedDescription, privacy: .public)")
     }
 
     private func refreshSelectedMachineDetails() async {
@@ -165,6 +179,7 @@ final class CloudKitCompanionStore: ObservableObject {
         do {
             try await historyMirror.refresh(machineID: selectedMachineID, snapshotStore: snapshotStore)
         } catch {
+            logCloudKitError(error, context: "history refresh")
             lastErrorMessage = userFacingCloudKitMessage(for: error)
         }
     }

@@ -64,7 +64,7 @@ struct CompanionRootView: View {
                 Text("Hardware Companion")
                     .font(.system(size: 22, weight: .semibold, design: .rounded))
                     .foregroundStyle(GraphiteSlateTheme.primaryText)
-                Text("CloudKit snapshots from the source Mac")
+                Text("iCloud snapshots from the source Mac")
                     .font(.system(size: 12, weight: .medium))
                     .foregroundStyle(GraphiteSlateTheme.secondaryText)
             }
@@ -104,13 +104,13 @@ struct CompanionRootView: View {
     private var emptyState: some View {
         VStack(spacing: 12) {
             ProgressView()
-            Text(store.machines.isEmpty ? "Waiting for CloudKit snapshots" : "Machine found, but no live snapshot yet")
+            Text(store.machines.isEmpty ? "Waiting for iCloud snapshots" : "Machine found, but no live snapshot yet")
                 .font(.headline)
                 .foregroundStyle(GraphiteSlateTheme.primaryText)
             Text(
                 store.machines.isEmpty
                 ? "Launch the macOS companion on your Mac and enable iOS Companion Sync in the Remote Hardware tab."
-                : "The source Mac is visible in CloudKit, but its live CurrentSnapshot record has not been published successfully yet."
+                : "The source Mac is visible in iCloud, but its live dashboard has not finished syncing yet."
             )
                 .font(.caption)
                 .multilineTextAlignment(.center)

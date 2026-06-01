@@ -445,6 +445,8 @@ struct RemoteHardwareTab: View {
             return .orange
         case .disconnected:
             return .gray.opacity(0.55)
+        @unknown default:
+            return .gray.opacity(0.55)
         }
     }
 
@@ -461,6 +463,8 @@ struct RemoteHardwareTab: View {
         case .failed:
             return "Failed"
         case .disconnected:
+            return "Disconnected"
+        @unknown default:
             return "Disconnected"
         }
     }
@@ -1236,6 +1240,10 @@ struct RemoteMachineTile: View {
                 .foregroundColor(.orange)
                 .font(.system(size: 12 * appUIScale))
         case .disconnected:
+            Circle()
+                .fill(Color.gray.opacity(0.5))
+                .frame(width: 8 * appUIScale, height: 8 * appUIScale)
+        @unknown default:
             Circle()
                 .fill(Color.gray.opacity(0.5))
                 .frame(width: 8 * appUIScale, height: 8 * appUIScale)
