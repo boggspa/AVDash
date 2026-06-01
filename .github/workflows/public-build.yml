@@ -1,0 +1,52 @@
+name: Public Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  unsigned-build:
+    name: Unsigned Xcode Build
+    runs-on: macos-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Build macOS app without signing
+        run: |
+          set -euo pipefail
+          xcodebuild \
+            -project PodcastPreview.xcodeproj \
+            -scheme PodcastPreview \
+            -configuration Release \
+            -destination 'generic/platform=macOS' \
+            -derivedDataPath .derivedData-public-macos \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            DEVELOPMENT_TEAM="" \
+            -quiet \
+            build
+
+      - name: Build iOS companion for simulator without signing
+        run: |
+          set -euo pipefail
+          xcodebuild \
+            -project PodcastPreview.xcodeproj \
+            -scheme PodcastPreviewCompanioniOS \
+            -configuration Debug \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath .derivedData-public-ios \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            DEVELOPMENT_TEAM="" \
+            -quiet \
+            build

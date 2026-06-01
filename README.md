@@ -28,6 +28,9 @@ The default public build uses only in-repository code and the pinned GRDB
 SwiftPM dependency. Direct-download builds with the full audio and FireWire
 feature set also need the signed sibling artifacts described below.
 
+GitHub Actions runs this unsigned public build on every push and pull request so
+fresh-clone buildability is continuously checked.
+
 ## Release Packaging
 
 Developer ID distribution is handled by:
