@@ -53,14 +53,17 @@ Public downloads should be notarized. The packaging script now fails if
 `NOTARY_PROFILE` is not set, unless `--skip-notarize` is passed for an
 internal-only artifact.
 
-Full direct-download releases require the signed sibling payloads in ignored
-`Artifacts/External/` and should be packaged with:
+Full direct-download releases can build, sign, stage, and bundle the local
+sibling payloads in one pass:
 
 ```sh
-Scripts/package_release_dmg.sh --clean --include-external-artifacts
+NOTARY_PROFILE=<your-notarytool-keychain-profile> \
+  Scripts/package_release_dmg.sh --clean --build-external-artifacts
 ```
 
-See `Artifacts/README.md` for the expected layout.
+Use `--include-external-artifacts` instead when you intentionally want to
+package an already-staged `Artifacts/External/` directory. See
+`Artifacts/README.md` for the expected layout.
 
 External payloads are copied by `Scripts/localise_external_artifacts.sh`, which
 verifies source signatures, preserves or reapplies per-artifact entitlements,
@@ -72,9 +75,9 @@ The helper build scripts expect sibling checkouts by default:
 - `AVCMETER_ROOT`, defaulting to `../AVCMeter`
 - `FIREWIRE_NET_BRIDGE_ROOT`, defaulting to `../FireWireNetBridge`
 
-Build, sign, and stage those products under `Artifacts/External/` before
-running a public direct-download package. Do not commit the staged signed
-artifacts or private signing material.
+`Scripts/stage_external_artifacts.sh` writes those products under
+`Artifacts/External/` for packaging. Do not commit the staged signed artifacts
+or private signing material.
 
 ## Local Network Feature
 

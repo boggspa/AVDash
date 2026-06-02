@@ -5,10 +5,10 @@ payloads that should be bundled into private or direct-download release builds
 without committing binaries, private signing material, or sibling repository
 outputs.
 
-AVDash direct-download builds need the signed AVCMeter and FireWire payloads in
-this directory for the full production feature set. Public source clones can
-still build without these staged artifacts, but those builds should be treated
-as reduced local/development builds.
+AVDash direct-download builds need the signed AVCMeter, Audio Visualiser, and
+FireWire payloads in this directory for the full production feature set. Public
+source clones can still build without these staged artifacts, but those builds
+should be treated as reduced local/development builds.
 
 Supported layout:
 
@@ -51,6 +51,8 @@ release, or provide a matching entitlement override without that key.
 The local helper scripts expect sibling source checkouts by default:
 
 - `Scripts/build_avcmeterkit.sh`: `AVCMETER_ROOT`, defaulting to `../AVCMeter`
+- `Scripts/build_audiovisualiserconverterkit.sh`: `AUDIO_VISUALISER_ROOT`,
+  defaulting to `../Audio Visualiser Conveter`
 - `Scripts/build_firewirenetbridgekit.sh`: `FIREWIRE_NET_BRIDGE_ROOT`,
   defaulting to `../FireWireNetBridge`
 

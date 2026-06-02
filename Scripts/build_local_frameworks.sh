@@ -42,6 +42,7 @@ if [[ "${SKIP_LOCAL_FRAMEWORK_BUILDS:-NO}" == "YES" ]]; then
 fi
 
 run_step "AVCMeterKit" "${SCRIPT_DIR}/build_avcmeterkit.sh"
+run_step "AudioVisualiserConverterKit" "${SCRIPT_DIR}/build_audiovisualiserconverterkit.sh"
 run_step "FireWireNetBridgeKit" "${SCRIPT_DIR}/build_firewirenetbridgekit.sh"
 
 echo "note: [Local Frameworks] Ready"

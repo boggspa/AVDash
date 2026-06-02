@@ -24,6 +24,7 @@ xcuserdata/
 
 # Locally generated external frameworks and vendor build products
 .avcmeterkit-build/
+.audiovisualiserkit-build/
 .firewirenetbridge-build/
 VendorBuild/
 Artifacts/External/

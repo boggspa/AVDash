@@ -23,9 +23,11 @@ PROFILE_INSTALL_DIR="${PROFILE_INSTALL_DIR:-${HOME}/Library/MobileDevice/Provisi
 NOTARY_PROFILE="${NOTARY_PROFILE:-}"
 EXTERNAL_ARTIFACTS_DIR="${EXTERNAL_ARTIFACTS_DIR:-${REPO_ROOT}/Artifacts/External}"
 EXTERNAL_ARTIFACT_LOCALISER="${EXTERNAL_ARTIFACT_LOCALISER:-${SCRIPT_DIR}/localise_external_artifacts.sh}"
+EXTERNAL_ARTIFACT_BUILDER="${EXTERNAL_ARTIFACT_BUILDER:-${SCRIPT_DIR}/stage_external_artifacts.sh}"
 SKIP_ARCHIVE=0
 SKIP_NOTARIZE="${SKIP_NOTARIZE:-0}"
 INCLUDE_EXTERNAL_ARTIFACTS="${INCLUDE_EXTERNAL_ARTIFACTS:-0}"
+BUILD_EXTERNAL_ARTIFACTS="${BUILD_EXTERNAL_ARTIFACTS:-0}"
 ALLOW_DIRECT_RESIGN_FALLBACK="${ALLOW_DIRECT_RESIGN_FALLBACK:-0}"
 CLEAN=0
 
@@ -41,6 +43,9 @@ Options:
   --skip-notarize  Create the DMG but do not submit or staple it.
   --include-external-artifacts
                   Bundle signed payloads from ${EXTERNAL_ARTIFACTS_DIR}.
+  --build-external-artifacts
+                  Build, stage, sign, and bundle local sibling payloads.
+                  Implies --include-external-artifacts.
   --allow-direct-resign-fallback
                   If xcodebuild export fails, copy the archived app and re-sign it directly.
   -h, --help       Show this help.
@@ -57,6 +62,8 @@ Environment:
                    optional payload directory, default: ${EXTERNAL_ARTIFACTS_DIR}
   EXTERNAL_ARTIFACT_LOCALISER
                    script used to copy and sign external payloads.
+  EXTERNAL_ARTIFACT_BUILDER
+                   script used to build and stage external payloads.
   BUILD_ROOT       output directory, default: ${BUILD_ROOT}
   TEAM_ID          Apple Developer Team ID, default: ${TEAM_ID}
 EOF
@@ -74,6 +81,10 @@ while [[ $# -gt 0 ]]; do
       SKIP_NOTARIZE=1
       ;;
     --include-external-artifacts)
+      INCLUDE_EXTERNAL_ARTIFACTS=1
+      ;;
+    --build-external-artifacts)
+      BUILD_EXTERNAL_ARTIFACTS=1
       INCLUDE_EXTERNAL_ARTIFACTS=1
       ;;
     --allow-direct-resign-fallback)
@@ -277,6 +288,24 @@ append_external_artifact_archive_settings() {
   fi
 }
 
+build_external_artifacts() {
+  if [[ "${BUILD_EXTERNAL_ARTIFACTS}" != "1" ]]; then
+    return 0
+  fi
+
+  if [[ ! -x "${EXTERNAL_ARTIFACT_BUILDER}" ]]; then
+    echo "External artifact builder is missing or not executable: ${EXTERNAL_ARTIFACT_BUILDER}" >&2
+    exit 1
+  fi
+
+  echo "Building and staging external artifacts"
+  CONFIGURATION="${CONFIGURATION}" \
+    TEAM_ID="${TEAM_ID}" \
+    DEVELOPER_ID_IDENTITY="${DEVELOPER_ID_RESOLVED_IDENTITY}" \
+    EXTERNAL_ARTIFACTS_DIR="${EXTERNAL_ARTIFACTS_DIR}" \
+    "${EXTERNAL_ARTIFACT_BUILDER}" --clean
+}
+
 embed_external_artifacts() {
   local app_path="$1"
 
@@ -345,6 +374,7 @@ if [[ "${CLEAN}" == "1" ]]; then
 fi
 
 /bin/mkdir -p "${BUILD_ROOT}"
+build_external_artifacts
 
 if [[ "${SKIP_ARCHIVE}" != "1" ]]; then
   /bin/rm -rf "${ARCHIVE_PATH}" "${EXPORT_PATH}"
