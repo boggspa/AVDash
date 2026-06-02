@@ -32,6 +32,7 @@ jobs:
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
             DEVELOPMENT_TEAM="" \
+            BUILD_LIBRARY_FOR_DISTRIBUTION=NO \
             -quiet \
             build
 
@@ -48,5 +49,6 @@ jobs:
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
             DEVELOPMENT_TEAM="" \
+            BUILD_LIBRARY_FOR_DISTRIBUTION=NO \
             -quiet \
             build
